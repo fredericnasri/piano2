@@ -1,0 +1,154 @@
+html {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(green, teal);
+}
+
+.container {
+    width: 360px;
+    height: 360px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(gray, orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.less-symbol {
+    border-top: 30px solid blue;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 90px;
+    transform: rotate(-45deg);
+}
+
+.less-symbol::before {
+    position: absolute;
+    content: '';
+    border-left: 30px solid yellow;
+    border-bottom: 30px solid transparent;
+    height: 60px;
+    width: 0;
+}
+
+.less-symbol::after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 30px;
+    background-color: red;
+}
+
+.less-symbol i {
+    position: absolute;
+    background-color: blue;
+    width: 2px;
+    height: 42.1px;
+    transform: rotate(45deg);
+    top: -35.6px;
+    left: 104.4px;
+    border-radius: 1px;
+    box-shadow: 0 127.3px yellow;
+}
+
+.greater-symbol {
+    border-top: 30px solid blue;
+    border-left: 30px solid transparent;
+    height: 0;
+    width: 90px;
+    transform: rotate(45deg);
+}
+
+.greater-symbol::before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid yellow;
+    border-bottom: 30px solid transparent;
+    height: 60px;
+    width: 0;
+    left: 60px;
+}
+
+.greater-symbol::after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 30px;
+    background-color: red;
+    left: 60px;
+}
+
+.greater-symbol i {
+    position: absolute;
+    background-color: blue;
+    width: 2px;
+    height: 42.1px;
+    transform: rotate(-45deg);
+    top: -35.6px;
+    left: -15.6px;
+    border-radius: 1px;
+    box-shadow: 0127.3px yellow;
+}
+
+.beaker {
+    border: 6px solid blue;
+    background-color: grey;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.beaker::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 77px;
+    background-color: gray;
+    border-right: 5px solid blue;
+    border-left: 5px solid blue;
+    top: -74px;
+    left: 25px;
+}
+
+.beaker::after {
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 5px;
+    background-color: blue;
+    top: -74px;
+    left: 23px;
+    border-radius: 2px;
+}
+
+.frame-1 {
+    position: absolute;
+    border: 1px solid #553900;
+    width: 232px;
+    height: 232px;
+    top: -70px;
+    left: 54px;
+    transform: rotate(45deg);
+}
+
+.frame-2 {
+    position: absolute;
+    border: 1px solid #553900;
+    width: 170px;
+    height: 170px;
+    top: -39px;
+    left: 85px;
+    transform: rotate(45deg);
+}
